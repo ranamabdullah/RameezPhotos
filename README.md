@@ -1,1 +1,2 @@
 # RameezPhotos
+# Wordpress Theme Project
