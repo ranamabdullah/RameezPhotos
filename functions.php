@@ -108,6 +108,7 @@ function learningWordPress_setup() {
 
 	//set the menu to the new location and save into database
 	$locations['primary'] = $menu_header_id;
+	$locations['footer'] = $menu_header_id;
 	set_theme_mod( 'nav_menu_locations', $locations );
 
 	// Add Categories

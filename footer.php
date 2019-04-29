@@ -184,10 +184,27 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="portfolio-boxstyle.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                <?php 
+
+                    $menu_locations = get_nav_menu_locations();
+
+                    $menus = wp_get_nav_menu_items( $menu_locations['footer'] );
+
+                    if($menus){
+
+                        foreach ($menus as $menu) {
+
+                            $active = "";
+
+                            if(is_page($menu->title)){
+                                $active = "active";
+                            }
+
+                            echo '<li class="'.$active.'"><a href="'.$menu->url.'">'.$menu->title.'</a></li>';
+                        } 
+                    }
+
+                    ?>
                 </ul>
             </nav>
         </div>
