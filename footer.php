@@ -180,7 +180,7 @@
     <section class="footer-bottom">
         <div class="wrapper">
             <div class="copyright">
-                Copyright © All Rights Reserved. <a href="contact.html#">Rameezphotos.com</a>
+                Copyright © All Rights Reserved. <a href="<?php echo get_home_url(); ?>">Rameezphotos.com</a>
             </div>
             <nav>
                 <ul>
