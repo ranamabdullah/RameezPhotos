@@ -133,9 +133,20 @@ function learningWordPress_setup() {
 	add_image_size('square-thumbnail', 80, 80, true);
 	add_image_size('banner-image', 920, 210, array('left', 'top'));
 	
+	// create home page linked pages;
+	create_home_linked_pages();
+
 	// Add post type support
 	add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 
+}
+
+function create_home_linked_pages(){
+	$template = "services-template.php";
+	add_page("Photo Editing",$template);
+	add_page("Video Editing",$template);
+	add_page("Logo Design",$template);
+	add_page("Website Design",$template);
 }
 
 function add_home_and_attach_to_menu($title,$menu_id){
@@ -157,11 +168,9 @@ function add_page_and_attach_to_menu($page_title,$menu_id){
 	}
 }
 
-function add_page($title){
+function add_page($title,$template = ''){
 	$new_page_id = -1;
 	if (isset($_GET['activated']) && is_admin()){
-	error_log("add_page ". $title);
-  
 		$new_page_title = $title;
 		$new_page_content = '';
 		$new_page_template = ''; //ex. template-custom.php. Leave blank if you don't want a custom page template.
@@ -175,6 +184,7 @@ function add_page($title){
 			'post_content' => $new_page_content,
 			'post_status' => 'publish',
 			'post_author' => 1,
+			'page_template'  => $template
 		);
 		error_log($page_check->ID);
 
@@ -338,6 +348,16 @@ function theme_deactivation_function(){
 	wp_delete_post($page->ID, true);
 	$page = get_page_by_title( 'Contact Us');
 	wp_delete_post($page->ID, true);
+
+	// delete home page linked pages;
+	$page = get_page_by_title( 'Photo Editing' );
+	wp_delete_post($page->ID,true);
+	$page = get_page_by_title( 'Video Editing' );
+	wp_delete_post($page->ID,true);
+	$page = get_page_by_title( 'Logo Design' );
+	wp_delete_post($page->ID,true);
+	$page = get_page_by_title( 'Website Design' );
+	wp_delete_post($page->ID,true);
 	
 }
 
