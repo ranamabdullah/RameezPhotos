@@ -48,7 +48,7 @@
 	<div class="wrapper header">
 
 		<div class="logo">
-			<a href="index.html"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" /></a>
+			<a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo" /></a>
 		</div>
 
 		<!--Navigation Menu Start-->
