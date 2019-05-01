@@ -32,7 +32,7 @@ jQuery(document).ready(function () {
 
     // LAYERSLIDER SETTING
     $('#layerslider').layerSlider({
-        skinsPath: 'layerslider/skins/',
+        skinsPath: root_url.url_base + '/layerslider/skins/',
         skin: 'fullwidthdark',
         thumbnailNavigation: 'disabled',
         showCircleTimer: false,

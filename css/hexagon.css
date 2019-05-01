@@ -91,7 +91,7 @@
 	display: table-cell;
 	text-align: center;
 	padding-top: 40%;
-	background: url(images/service-icon/service1.png) no-repeat 50% 20%;
+	background: url(../images/service-icon/service1.png) no-repeat 50% 20%;
 	opacity: 0.4;
 
 	-webkit-transition: opacity 0.2s ease-in-out;
@@ -102,15 +102,15 @@
 }
 
 .hextext.service2 {
-	background: url(images/service-icon/service2.png) no-repeat 50% 20%;
+	background: url(../images/service-icon/service2.png) no-repeat 50% 20%;
 }
 
 .hextext.service3 {
-	background: url(images/service-icon/service3.png) no-repeat 50% 20%;
+	background: url(../images/service-icon/service3.png) no-repeat 50% 20%;
 }
 
 .hextext.service4 {
-	background: url(images/service-icon/service4.png) no-repeat 50% 20%;
+	background: url(../images/service-icon/service4.png) no-repeat 50% 20%;
 }
 
 .service-container a:hover .hextext {

@@ -21,7 +21,7 @@
 
 
 
-/* ===== Body, Images and Typography ===== */
+/* ===== Body, ../images and Typography ===== */
 
 body {
 	background-color: #aaaaaa;
@@ -71,19 +71,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .container.background.backimage1 {
-	background-image: url(images/background/background-image1.jpg);
+	background-image: url(../images/background/background-image1.jpg);
 }
 
 .container.background.backimage2 {
-	background-image: url(images/background/background-image2.jpg);
+	background-image: url(../images/background/background-image2.jpg);
 }
 
 .container.background.backimage3 {
-	background-image: url(images/background/background-image3.jpg);
+	background-image: url(../images/background/background-image3.jpg);
 }
 
 .container.background.backimage4 {
-	background-image: url(images/background/background-image4.jpg);
+	background-image: url(../images/background/background-image4.jpg);
 }
 
 .wrapper {
@@ -196,7 +196,7 @@ blockquote {
 .quote-icon {
 	padding-top: 8px;
 	padding-left: 45px;
-	background: url(images/blockquote-icon.png) no-repeat;
+	background: url(../images/blockquote-icon.png) no-repeat;
 	
 	/* div padding fix */
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -265,7 +265,7 @@ blockquote {
 
 .service-container {
 	position: relative;
-	background: url(images/texture_bg.png) repeat;
+	background: url(../images/texture_bg.png) repeat;
 	z-index: 900;
 }
 
@@ -429,7 +429,7 @@ blockquote {
 	margin-right: 35px;
 	margin-top: 30px;
 	padding-left: 35px;
-	background: url(images/plus-link-highlight.png) no-repeat left;
+	background: url(../images/plus-link-highlight.png) no-repeat left;
 }
 
 .highlight-details a .highlight-moreinfo {
@@ -497,7 +497,7 @@ blockquote {
 
 .our-team {
 	padding: 45px 35px;
-	background: url(images/texture_bg.png) repeat;
+	background: url(../images/texture_bg.png) repeat;
 	border-top: #ffffff solid 1px;
 	overflow: hidden;
 }
@@ -507,7 +507,7 @@ blockquote {
 	margin: auto;
 	margin-top: 5px;
 	text-align: center;
-	background: url(images/team-title-line.png) repeat-x left;
+	background: url(../images/team-title-line.png) repeat-x left;
 }
 
 .team-title {
@@ -517,7 +517,7 @@ blockquote {
 	text-shadow: 0px 2px 2px rgba(255, 255, 255, 1);
 	margin: auto;
 	padding: 0px 30px;
-	background: url(images/texture_bg.png) repeat;
+	background: url(../images/texture_bg.png) repeat;
 }
 
 .our-team ul {
@@ -544,7 +544,7 @@ blockquote {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url(images/team-mask.png) no-repeat;
+	background: url(../images/team-mask.png) no-repeat;
 	background-size: cover;
 	z-index: 11;
 }
@@ -608,12 +608,12 @@ blockquote {
 }
 
 .header-image.header-feature1 {
-	background: url(images/upload/fullwidth-header-feature-image1.jpg) no-repeat;
+	background: url(../images/upload/fullwidth-header-feature-image1.jpg) no-repeat;
 	background-size: cover;
 }
 
 .header-image.header-feature2 {
-	background: url(images/upload/fullwidth-header-feature-image2.jpg) no-repeat;
+	background: url(../images/upload/fullwidth-header-feature-image2.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -795,7 +795,7 @@ blockquote {
 	text-transform: uppercase;
 	padding: 50px 20px 0px 20px;
 	margin-top: 30%;
-	background: url(images/lupe2.png) no-repeat top;
+	background: url(../images/lupe2.png) no-repeat top;
 	
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -980,11 +980,11 @@ blockquote {
 }
 
 .next {
-	background: url(images/next.png) no-repeat center;
+	background: url(../images/next.png) no-repeat center;
 }
 
 .next:hover {
-	background: url(images/next-white.png) no-repeat center;
+	background: url(../images/next-white.png) no-repeat center;
 }
 
 
@@ -1472,7 +1472,7 @@ blockquote {
 	line-height: 20px;
 	margin-top: 10px;
 	padding-left: 25px;
-	background: url(images/sidebar-plus-link.png) no-repeat left;
+	background: url(../images/sidebar-plus-link.png) no-repeat left;
 	
 	/* div padding fix */
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -1615,7 +1615,7 @@ blockquote {
 
 .footer-address li {
 	padding-left: 20px;
-	background: url(images/footer-plus-listing.png) no-repeat left;
+	background: url(../images/footer-plus-listing.png) no-repeat left;
 	
 	/* div padding fix */
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -1823,7 +1823,7 @@ blockquote {
     position: fixed;
     bottom: 2em;
     right: 2em;
-	background: url(images/go-to-top.png) no-repeat;
+	background: url(../images/go-to-top.png) no-repeat;
 	opacity: 0.7;
 	z-index: 1000;
     display: none;
@@ -1843,7 +1843,7 @@ blockquote {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url(images/plus-link-thumbnail.png) no-repeat center center;
+	background: url(../images/plus-link-thumbnail.png) no-repeat center center;
 	background-color: rgba(54, 191, 196, 0.85);
 	opacity: 0;
 	
@@ -1868,5 +1868,5 @@ blockquote {
 }
 
 .blog-lists .thumbnail-hover {
-	background: rgba(54, 191, 196, 0.85) url(images/lupe2.png) no-repeat center;
+	background: rgba(54, 191, 196, 0.85) url(../images/lupe2.png) no-repeat center;
 }
